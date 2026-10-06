@@ -1,0 +1,83 @@
+/* Custom CSS Enhancements for Thangaraj Portfolio */
+
+@layer utilities {
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #090d16;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #06b6d4;
+    }
+}
+
+/* Glassmorphism Card Style */
+.glass-panel {
+    background: rgba(18, 24, 36, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Glow Card Animation */
+.glow-card-cyan:hover {
+    box-shadow: 0 0 30px -5px rgba(6, 182, 212, 0.25);
+}
+
+.glow-card-indigo:hover {
+    box-shadow: 0 0 30px -5px rgba(99, 102, 241, 0.25);
+}
+
+.glow-card-teal:hover {
+    box-shadow: 0 0 30px -5px rgba(20, 184, 166, 0.25);
+}
+
+/* Code Syntax Styling */
+#code-snippet-display {
+    line-height: 1.7;
+    font-size: 0.875rem;
+}
+
+/* Skill Filter Button Active State */
+.skill-filter-btn.active, .project-filter-btn.active {
+    background-color: #06b6d4 !important;
+    color: #020617 !important;
+    font-weight: 700 !important;
+    border-color: #06b6d4 !important;
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+}
+
+/* Code Tab Active State */
+.code-tab-btn.active {
+    background-color: #1e293b !important;
+    color: #38bdf8 !important;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+/* Smooth Image Transitions */
+img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Card Reveal Animation */
+.fade-in-up {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
